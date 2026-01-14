@@ -3,9 +3,7 @@ import streamlit as st
 from pathlib import Path
 from sklearn.linear_model import LinearRegression
 
-# ===============================
-# LOAD DATA
-# ===============================
+
 
 
 @st.cache_data

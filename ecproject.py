@@ -46,9 +46,9 @@ y = df["Yearly Amount Spent"]
 model = LinearRegression()
 model.fit(X, y)
 
-# ===============================
+
 # STREAMLIT UI
-# ===============================
+
 st.title("E-Commerce Customer Spending Prediction")
 
 st.sidebar.title("Input Customer Data")
@@ -77,14 +77,14 @@ membership = st.sidebar.slider(
     float(df["Length of Membership"].max())
 )
 
-# ===============================
+
 # PREDICTION
-# ===============================
+
 input_data = [[avg_session, time_app, time_web, membership]]
 prediction = model.predict(input_data)
 
-# ===============================
+
 # OUTPUT
-# ===============================
+
 st.subheader("Prediction Result")
 st.write(f"💰 **Predicted Yearly Amount Spent:** ${prediction[0]:.2f}")

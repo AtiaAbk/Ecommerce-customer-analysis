@@ -40,9 +40,9 @@ X = df[
 
 y = df["Yearly Amount Spent"]
 
-# ===============================
+
 # TRAIN MODEL
-# ===============================
+
 model = LinearRegression()
 model.fit(X, y)
 

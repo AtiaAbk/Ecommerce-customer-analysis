@@ -28,9 +28,7 @@ def load_data():
 
 df = load_data()
 
-# ===============================
-# FEATURES & TARGET
-# ===============================
+
 X = df[
     [
         "Avg. Session Length",

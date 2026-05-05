@@ -17,7 +17,7 @@ def load_data():
     for p in candidates:
         if p.exists():
             return pd.read_csv(p)
-    # try any file starting with Ecommerce in this folder
+    
     for f in base.glob("Ecommerce*"):
         if f.is_file():
             return pd.read_csv(f)
